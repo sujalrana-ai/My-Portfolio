@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sujal Rana is an AI Engineer building production-ready ML, GenAI, and RAG systems." />
+  <title>Sujal Rana | AI Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Sujal Rana home">
+        <span class="brand-mark">SR</span>
+        <span>Sujal Rana</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span>&#9776;</span>
+      </button>
+
+      <div class="nav-shell" id="site-nav">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="theme-toggle-dot" aria-hidden="true"></span>
+            <span class="theme-toggle-copy">
+              <span class="theme-toggle-label" id="theme-label">D</span>
+            </span>
+          </button>
+          <a class="button button-secondary" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="reveal is-visible">
+          <span class="eyebrow">Open for AI, GenAI, and ML opportunities</span>
+          <h1>
+            <span class="hero-name">Sujal Rana</span>
+          </h1>
+          <div class="typing-wrap" aria-live="polite">
+            <span>&gt;</span>
+            <span id="typed-text">AI Engineer</span>
+            <span class="typing-caret" aria-hidden="true"></span>
+          </div>
+          <p class="hero-copy">
+            AI Engineer with hands-on experience in end-to-end machine learning and GenAI systems,
+            including LLM-based RAG, MLOps workflows, and API deployment using FastAPI.
+          </p>
+          <div class="hero-cta">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <a href="mailto:sujalr7176@gmail.com">sujalr7176@gmail.com</a>
+            <a href="tel:+918140845195">+91 8140845195</a>
+            <a class="social-link" href="https://github.com/sujalrana-ai" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.33 1.12 2.9.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.15-4.55-5.14 0-1.14.39-2.08 1.03-2.82-.1-.26-.45-1.32.1-2.76 0 0 .84-.28 2.75 1.08A9.25 9.25 0 0 1 12 6.87c.85 0 1.71.12 2.5.36 1.91-1.36 2.75-1.08 2.75-1.08.55 1.44.2 2.5.1 2.76.64.74 1.03 1.68 1.03 2.82 0 4-2.33 4.88-4.56 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.27 10.27 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"/>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/sujal-rana-4ba47234a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.6 9.75h2.68V18H5.6V9.75Zm4.37 0h2.57v1.13h.04c.36-.68 1.23-1.4 2.54-1.4 2.72 0 3.22 1.82 3.22 4.19V18h-2.68v-3.83c0-.91-.02-2.09-1.25-2.09-1.25 0-1.44.99-1.44 2.03V18H9.97V9.75Z"/>
+                <path d="M4 4h16v16H4z" fill="none"/>
+              </svg>
+            </a>
+            <a class="social-link" href="https://digital-secure-space.netlify.app/" target="_blank" rel="noreferrer" aria-label="Website">
+              <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm6.93 9h-3.02a15.64 15.64 0 0 0-1.17-5.01A8.03 8.03 0 0 1 18.93 11ZM12 4.06c.83 1.2 1.8 3.53 2.09 6.94H9.91C10.2 7.59 11.17 5.26 12 4.06ZM4.99 13h3.1a15.9 15.9 0 0 0 1.11 4.94A8.03 8.03 0 0 1 4.99 13Zm3.1-2h-3.1a8.03 8.03 0 0 1 4.21-4.94A15.9 15.9 0 0 0 8.09 11ZM12 19.94c-.83-1.2-1.8-3.53-2.09-6.94h4.18c-.29 3.41-1.26 5.74-2.09 6.94ZM14.8 17.94A15.64 15.64 0 0 0 15.91 13h3.1a8.03 8.03 0 0 1-4.21 4.94Z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="signal-strip reveal">
+            <div class="signal-card">
+              <strong>3</strong>
+              <span>Flagship projects shipped</span>
+            </div>
+            <div class="signal-card">
+              <strong>4</strong>
+              <span>Certifications completed</span>
+            </div>
+            <div class="signal-card">
+              <strong>7.58</strong>
+              <span>Current CGPA</span>
+            </div>
+            <div class="signal-card">
+              <strong>FastAPI</strong>
+              <span>Deployment-ready backend focus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-board">
+            <div class="board-top">
+              <span class="board-indicator">Live Workboard</span>
+              <span>portfolio.v2 / personal signal</span>
+            </div>
+            <div class="board-grid">
+              <div class="board-card">
+                <span class="board-card-label">Current Positioning</span>
+                <strong>AI engineer focused on useful systems, not demos.</strong>
+                <p>
+                  Model work, retrieval design, evaluation thinking, and backend delivery are all
+                  part of the same workflow here.
+                </p>
+              </div>
+              <div class="board-split">
+                <div class="board-card">
+                  <span class="board-card-label">Strength</span>
+                  <strong>RAG + ML execution</strong>
+                  <p>From classical ML accuracy targets to LLM workflows with corrective behavior.</p>
+                </div>
+                <div class="board-card">
+                  <span class="board-card-label">Working Style</span>
+                  <strong>Measure. Refine. Ship.</strong>
+                  <p>Clear metrics, debug visibility, and outcome-focused engineering choices.</p>
+                </div>
+              </div>
+              <div class="board-card">
+                <span class="board-card-label">Why this portfolio feels different</span>
+                <p>
+                  The visual language is built around warm signal colors, editorial spacing, and a
+                  sharper information layout instead of the usual neon-purple AI template.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-badges" aria-hidden="true">
+            <span class="floating-badge">LangGraph</span>
+            <span class="floating-badge">FastAPI</span>
+            <span class="floating-badge">RAG Systems</span>
+            <span class="floating-badge">TensorFlow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">About</h2>
+          <p class="section-copy">
+            Sujal Rana builds AI systems with a strong balance of practical engineering and model
+            thinking. The goal is simple: create work that is reliable, measurable, and immediately
+            useful in real product environments.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-art reveal">
+            <div class="about-shell">
+              <div class="avatar-frame" aria-label="Portrait of Sujal Rana">
+                <img class="portrait-photo" src="assets/sujal-linkedin.jpeg" alt="Sujal Rana portrait" />
+              </div>
+              <div class="portrait-caption">
+                A sharper, more personal presentation for an AI engineer profile that should feel
+                intentional when recruiters open it.
+              </div>
+              <div class="mini-row">
+                <span class="mini-chip">AI</span>
+                <span class="mini-chip">LLMs</span>
+                <span class="mini-chip">MLOps</span>
+                <span class="mini-chip">APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-panel reveal">
+            <h3>B.E. in Artificial Intelligence and Data Science</h3>
+            <p>Government Engineering College (GEC) Rajkot | 2023&ndash;Present | CGPA: 7.58/10.0</p>
+            <p>
+              Sujal combines academic learning with hands-on execution across machine learning,
+              generative AI, and backend deployment. The work shown here reflects someone who can
+              move from experimentation to structured delivery without losing sight of the outcome.
+            </p>
+            <div class="stats-grid" aria-label="Key highlights">
+              <div class="stat-card">
+                <strong>7.58</strong>
+                <span>CGPA</span>
+              </div>
+              <div class="stat-card">
+                <strong>3</strong>
+                <span>Major Projects</span>
+              </div>
+              <div class="stat-card">
+                <strong>4</strong>
+                <span>Certifications</span>
+              </div>
+            </div>
+            <div class="about-note">
+              Sujal is especially interested in roles where applied AI, thoughtful product building,
+              and fast iteration matter more than hype.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-copy">
+            A toolkit built around intelligent systems that need more than just model experimentation:
+            they need routing, deployment, structure, and business clarity.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skills-card reveal">
+            <div class="skills-head">
+              <div class="skills-icon">DEV</div>
+              <div>
+                <h3>Programming &amp; Databases</h3>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flask</span>
+            </div>
+          </article>
+
+          <article class="skills-card reveal">
+            <div class="skills-head">
+              <div class="skills-icon">AIML</div>
+              <div>
+                <h3>AI / ML / NLP</h3>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">RAG</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">MCP</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Hugging Face</span>
+            </div>
+          </article>
+
+          <article class="skills-card reveal">
+            <div class="skills-head">
+              <div class="skills-icon">OPS</div>
+              <div>
+                <h3>Tools &amp; DevOps</h3>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Docker</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="skills-card reveal">
+            <div class="skills-head">
+              <div class="skills-icon">HUMN</div>
+              <div>
+                <h3>Soft Skills</h3>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Analytical Thinking</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Professional Communication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-copy">
+            The project selection stays small on purpose. Each build demonstrates a different piece
+            of engineering maturity: predictive modeling, corrective retrieval, and conversational tooling.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card tilt-card reveal">
+            <div class="project-top">
+              <div class="project-index">01</div>
+              <a class="button button-secondary" href="https://github.com/sujalrana-ai/AI-Driven-Multi-Disease-Diagnostic-System" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <h3>Multi-Disease Diagnostic System</h3>
+            <p class="project-copy">
+              A disease prediction application built for high-confidence diagnostics with quick
+              inference and a multi-model workflow.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Scikit-Learn</span>
+            </div>
+            <div class="metrics">
+              <div class="metric"><span>Kidney Accuracy</span><strong>100%</strong></div>
+              <div class="metric"><span>Heart Accuracy</span><strong>98.5%</strong></div>
+              <div class="metric"><span>Breast Cancer Accuracy</span><strong>96.4%</strong></div>
+              <div class="metric"><span>Latency</span><strong>&lt; 2 seconds</strong></div>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal">
+            <div class="project-top">
+              <div class="project-index">02</div>
+              <a class="button button-secondary" href="https://github.com/sujalrana-ai/Corrective-Retrieval-Augmented-Generation-CRAG-System-using-LangGraph" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <h3>Corrective RAG (CRAG) System</h3>
+            <p class="project-copy">
+              A graph-based RAG pipeline with debuggable nodes and self-correction logic to improve
+              reliability under real question-answering conditions.
+            </p>
+            <div class="tag-list">
+              <span class="tag">LangGraph</span>
+              <span class="tag">ChromaDB</span>
+              <span class="tag">OpenAI</span>
+            </div>
+            <div class="metrics">
+              <div class="metric"><span>Workflow</span><strong>Debuggable execution graph</strong></div>
+              <div class="metric"><span>Improvement</span><strong>15% fewer hallucinations</strong></div>
+              <div class="metric"><span>Pattern</span><strong>Automated self-correction</strong></div>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card reveal">
+            <div class="project-top">
+              <div class="project-index">03</div>
+              <a class="button button-secondary" href="https://github.com/sujalrana-ai/LangGraph-Based-Multi-Tool-AI-Chatbot" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <h3>Multi-Tool AI Chatbot</h3>
+            <p class="project-copy">
+              A multi-turn assistant with memory, routing logic, and tool-calling that pushes for
+              more accurate and context-aware replies.
+            </p>
+            <div class="tag-list">
+              <span class="tag">LangGraph</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Streamlit</span>
+            </div>
+            <div class="metrics">
+              <div class="metric"><span>Memory</span><strong>Persistent via SQLite</strong></div>
+              <div class="metric"><span>Quality Gain</span><strong>20% accuracy boost</strong></div>
+              <div class="metric"><span>Routing</span><strong>Conditional tool-calling</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-copy">
+            These internships show an important pattern: pairing model work with business-readable
+            outputs, dashboards, and recommendations that decision-makers can actually use.
+          </p>
+        </div>
+
+        <div class="timeline reveal" id="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-head">
+                <div class="timeline-company">
+                  <div class="company-logo">BCG</div>
+                  <div>
+                    <h3>Data Science Virtual Intern</h3>
+                    <p>BCG X (via Forage) | Remote Global</p>
+                  </div>
+                </div>
+                <p class="timeline-date">Dec 2025 &ndash; Jan 2026</p>
+              </div>
+              <ul>
+                <li>Built a Random Forest classifier with 88% accuracy for churn prediction on 5,000+ customer dataset.</li>
+                <li>Wrote executive summary with 5+ actionable business strategies for customer retention.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card">
+              <div class="timeline-head">
+                <div class="timeline-company">
+                  <div class="company-logo">TATA</div>
+                  <div>
+                    <h3>GenAI Virtual Intern</h3>
+                    <p>Tata Group (via Forage) | Remote Global</p>
+                  </div>
+                </div>
+                <p class="timeline-date">Jan 2026 &ndash; Feb 2026</p>
+              </div>
+              <ul>
+                <li>Automated data storytelling with GenAI, cutting manual reporting time by 30%.</li>
+                <li>Built retail trend dashboards in PowerBI &amp; Python; found 3 key growth areas for executives.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-copy">
+            A compact record of formal learning across visualization, machine learning, agentic
+            tooling, and modern AI interoperability.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-mark">IBM</div>
+            <div>
+              <h3>Data Visualization</h3>
+              <p class="cert-meta">Issuer: IBM</p>
+            </div>
+            <a class="button button-secondary" href="https://www.credly.com/badges/a417b690-9dca-478f-bae4-177f7e5a42f9" target="_blank" rel="noreferrer">Verify</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-mark">ST</div>
+            <div>
+              <h3>Machine Learning Specialization</h3>
+              <p class="cert-meta">Issuer: Stanford</p>
+            </div>
+            <a class="button button-secondary" href="https://www.coursera.org/account/accomplishments/specialization/CAH18LNV6K5G" target="_blank" rel="noreferrer">Verify</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-mark">IBM</div>
+            <div>
+              <h3>Agentic AI with LangChain</h3>
+              <p class="cert-meta">Issuer: IBM</p>
+            </div>
+            <a class="button button-secondary" href="https://www.coursera.org/account/accomplishments/verify/37M3YE2NXMSW" target="_blank" rel="noreferrer">Verify</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-mark">ANTH</div>
+            <div>
+              <h3>Model Context Protocol</h3>
+              <p class="cert-meta">Issuer: Anthropic</p>
+            </div>
+            <a class="button button-secondary" href="https://verify.skilljar.com/c/aoiw4eqhknwu" target="_blank" rel="noreferrer">Verify</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-copy">
+            If you want someone who enjoys both the model side and the system side of AI work,
+            this is the right place to start the conversation.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <h3>Let&apos;s build something thoughtful.</h3>
+            <p class="contact-copy">
+              Sujal is interested in AI engineering roles that involve applied ML, LLM systems,
+              retrieval workflows, product thinking, and backend deployment.
+            </p>
+            <div class="contact-details">
+              <a href="mailto:sujalr7176@gmail.com">Email: sujalr7176@gmail.com</a>
+              <a href="tel:+918140845195">Phone: +91 8140845195</a>
+              <a href="https://www.linkedin.com/in/sujal-rana-4ba47234a/" target="_blank" rel="noreferrer">Open LinkedIn</a>
+              <a href="https://github.com/sujalrana-ai" target="_blank" rel="noreferrer">Open GitHub</a>
+              <a href="https://digital-secure-space.netlify.app/" target="_blank" rel="noreferrer">Open Website</a>
+            </div>
+          </article>
+
+          <article class="contact-card reveal">
+            <form class="contact-form" id="contact-form">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com" required />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell Sujal about your role, team, or project." required></textarea>
+              </div>
+              <div class="form-actions">
+                <button class="button button-primary" type="submit">Send Message</button>
+                <button class="button inline-ghost" type="button" id="copy-email">Copy Email</button>
+              </div>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+              <div class="inbox-panel">
+                <div class="field">
+                  <label for="admin-key">Inbox Key</label>
+                  <input id="admin-key" type="password" placeholder="Enter owner inbox key" />
+                </div>
+                <div class="form-actions">
+                  <button class="button inline-ghost" type="button" id="load-messages">View Messages</button>
+                </div>
+                <p class="form-status" id="messages-status" aria-live="polite"></p>
+                <div class="messages-list" id="messages-list"></div>
+              </div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="footer-copy">&copy; <span id="year"></span> Sujal Rana. Built with intention for real AI opportunities.</p>
+      <div class="footer-links">
+        <a class="social-link" href="https://github.com/sujalrana-ai" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.03-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.33 1.12 2.9.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.15-4.55-5.14 0-1.14.39-2.08 1.03-2.82-.1-.26-.45-1.32.1-2.76 0 0 .84-.28 2.75 1.08A9.25 9.25 0 0 1 12 6.87c.85 0 1.71.12 2.5.36 1.91-1.36 2.75-1.08 2.75-1.08.55 1.44.2 2.5.1 2.76.64.74 1.03 1.68 1.03 2.82 0 4-2.33 4.88-4.56 5.13.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.27 10.27 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"/>
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/sujal-rana-4ba47234a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.6 9.75h2.68V18H5.6V9.75Zm4.37 0h2.57v1.13h.04c.36-.68 1.23-1.4 2.54-1.4 2.72 0 3.22 1.82 3.22 4.19V18h-2.68v-3.83c0-.91-.02-2.09-1.25-2.09-1.25 0-1.44.99-1.44 2.03V18H9.97V9.75Z"/>
+            <path d="M4 4h16v16H4z" fill="none"/>
+          </svg>
+        </a>
+        <a class="social-link" href="https://digital-secure-space.netlify.app/" target="_blank" rel="noreferrer" aria-label="Website">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm6.93 9h-3.02a15.64 15.64 0 0 0-1.17-5.01A8.03 8.03 0 0 1 18.93 11ZM12 4.06c.83 1.2 1.8 3.53 2.09 6.94H9.91C10.2 7.59 11.17 5.26 12 4.06ZM4.99 13h3.1a15.9 15.9 0 0 0 1.11 4.94A8.03 8.03 0 0 1 4.99 13Zm3.1-2h-3.1a8.03 8.03 0 0 1 4.21-4.94A15.9 15.9 0 0 0 8.09 11ZM12 19.94c-.83-1.2-1.8-3.53-2.09-6.94h4.18c-.29 3.41-1.26 5.74-2.09 6.94ZM14.8 17.94A15.64 15.64 0 0 0 15.91 13h3.1a8.03 8.03 0 0 1-4.21 4.94Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

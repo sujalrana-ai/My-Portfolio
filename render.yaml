@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sujal-portfolio
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: PORTFOLIO_ADMIN_KEY
+        sync: false
+    disk:
+      name: messages
+      mountPath: /var/data
