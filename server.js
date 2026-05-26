@@ -5,18 +5,10 @@ const { URL } = require("url");
 
 const host = process.env.HOST || "0.0.0.0";
 const port = Number(process.env.PORT || 8000);
-const adminKey = process.env.PORTFOLIO_ADMIN_KEY || "xxxxxxxx";
+const adminKey = process.env.PORTFOLIO_ADMIN_KEY || "xxxxxxx";
 const workspaceRoot = __dirname;
 const dataDirectory = process.env.DATA_DIR || workspaceRoot;
 const messagesFile = process.env.MESSAGES_FILE || path.join(dataDirectory, "messages.json");
-
-const staticFiles = {
-  "/": "index.html",
-  "/index.html": "index.html",
-  "/style.css": "style.css",
-  "/app.js": "app.js",
-  "/assets/sujal-linkedin.jpeg": path.join("assets", "sujal-linkedin.jpeg")
-};
 
 const contentTypes = {
   ".html": "text/html; charset=utf-8",
@@ -52,6 +44,27 @@ function sendFile(response, filePath) {
     });
     response.end(data);
   });
+}
+
+function resolveStaticPath(pathname) {
+  const normalizedPath = pathname === "/" ? "/index.html" : pathname;
+  const relativePath = path.normalize(decodeURIComponent(normalizedPath)).replace(/^(\.\.[/\\])+/, "");
+  const candidatePath = path.resolve(workspaceRoot, "." + relativePath);
+
+  if (!candidatePath.startsWith(workspaceRoot)) {
+    return null;
+  }
+
+  if (!fs.existsSync(candidatePath)) {
+    return null;
+  }
+
+  const stats = fs.statSync(candidatePath);
+  if (!stats.isFile()) {
+    return null;
+  }
+
+  return candidatePath;
 }
 
 function ensureMessagesFile() {
@@ -185,9 +198,9 @@ const server = http.createServer(async (request, response) => {
       return;
     }
 
-    const staticFile = staticFiles[pathname];
-    if (staticFile) {
-      sendFile(response, path.join(workspaceRoot, staticFile));
+    const staticFilePath = resolveStaticPath(pathname);
+    if (staticFilePath) {
+      sendFile(response, staticFilePath);
       return;
     }
 
